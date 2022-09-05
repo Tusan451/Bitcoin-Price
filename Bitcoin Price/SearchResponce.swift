@@ -7,18 +7,24 @@
 
 import Foundation
 
-struct SearchResponce: Decodable {
-    var time: [Time]
-    var bpi: [[Currency]]
+struct SearchResponce: Codable {
+    var time: Time
+    var bpi: Currency
 }
 
-struct Time: Decodable {
+struct Time: Codable {
     var updated: String
     var updatedISO: String
     var updateduk: String
 }
 
-struct Currency: Decodable {
+struct Currency: Codable {
+    var USD: CurrencyData
+    var GBP: CurrencyData
+    var EUR: CurrencyData
+}
+
+struct CurrencyData: Codable {
     var code: String
     var rate_float: Float
 }

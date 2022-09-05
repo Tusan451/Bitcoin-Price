@@ -17,9 +17,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CurrencyTableViewCell
         
-        cell.currency.text = "USD"
-        cell.rate.text = "19750"
-        
         return cell
     }
     
