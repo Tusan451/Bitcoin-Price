@@ -53,5 +53,14 @@ class ViewController: UIViewController {
         currencyes.append(gbp)
         currencyes.append(eur)
     }
+    
+    private func serverToLocalTime(date: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        dateFormatter.timeZone = TimeZone(abbreviation: "ru_RU")
+        let localDate = dateFormatter.date(from: date)
+        
+        return localDate
+    }
 }
 
