@@ -13,6 +13,8 @@
 		E064DE2228C6309200141D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E064DE2028C6309200141D2E /* Main.storyboard */; };
 		E064DE2428C6309400141D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E064DE2328C6309400141D2E /* Assets.xcassets */; };
 		E064DE2728C6309400141D2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E064DE2528C6309400141D2E /* LaunchScreen.storyboard */; };
+		E064DE2F28C63A5A00141D2E /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064DE2E28C63A5A00141D2E /* CurrencyTableViewCell.swift */; };
+		E064DE3128C63ACD00141D2E /* extension View Controller table delegate & data source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064DE3028C63ACD00141D2E /* extension View Controller table delegate & data source.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E064DE2328C6309400141D2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E064DE2628C6309400141D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E064DE2828C6309400141D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E064DE2E28C63A5A00141D2E /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		E064DE3028C63ACD00141D2E /* extension View Controller table delegate & data source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension View Controller table delegate & data source.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				E064DE1A28C6309200141D2E /* AppDelegate.swift */,
 				E064DE1C28C6309200141D2E /* SceneDelegate.swift */,
 				E064DE1E28C6309200141D2E /* ViewController.swift */,
+				E064DE3028C63ACD00141D2E /* extension View Controller table delegate & data source.swift */,
 				E064DE2028C6309200141D2E /* Main.storyboard */,
 				E064DE2328C6309400141D2E /* Assets.xcassets */,
 				E064DE2528C6309400141D2E /* LaunchScreen.storyboard */,
 				E064DE2828C6309400141D2E /* Info.plist */,
+				E064DE2E28C63A5A00141D2E /* CurrencyTableViewCell.swift */,
 			);
 			path = "Bitcoin Price";
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E064DE2F28C63A5A00141D2E /* CurrencyTableViewCell.swift in Sources */,
 				E064DE1F28C6309200141D2E /* ViewController.swift in Sources */,
+				E064DE3128C63ACD00141D2E /* extension View Controller table delegate & data source.swift in Sources */,
 				E064DE1B28C6309200141D2E /* AppDelegate.swift in Sources */,
 				E064DE1D28C6309200141D2E /* SceneDelegate.swift in Sources */,
 			);
