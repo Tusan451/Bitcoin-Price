@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let urlString = "https://api.coindesk.com/v1/bpi/currentprice.json"
+    
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
