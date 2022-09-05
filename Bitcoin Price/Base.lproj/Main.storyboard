@@ -83,6 +83,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Курс биткоина" id="tWf-8M-YfW"/>
                     <connections>
+                        <outlet property="currentDate" destination="1mc-gf-fWk" id="Csc-n4-WRQ"/>
                         <outlet property="table" destination="TdN-G6-pYL" id="ejr-v5-N18"/>
                     </connections>
                 </viewController>

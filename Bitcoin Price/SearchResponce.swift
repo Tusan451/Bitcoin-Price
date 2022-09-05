@@ -19,9 +19,9 @@ struct Time: Codable {
 }
 
 struct Currency: Codable {
-    var USD: CurrencyData
-    var GBP: CurrencyData
-    var EUR: CurrencyData
+    var USD: CurrencyData?
+    var GBP: CurrencyData?
+    var EUR: CurrencyData?
 }
 
 struct CurrencyData: Codable {
