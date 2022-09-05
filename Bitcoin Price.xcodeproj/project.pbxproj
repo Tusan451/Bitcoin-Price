@@ -17,6 +17,7 @@
 		E064DE3128C63ACD00141D2E /* extension View Controller table delegate & data source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064DE3028C63ACD00141D2E /* extension View Controller table delegate & data source.swift */; };
 		E064DE3328C6417500141D2E /* SearchResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064DE3228C6417500141D2E /* SearchResponce.swift */; };
 		E064DE3528C644D600141D2E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064DE3428C644D600141D2E /* NetworkService.swift */; };
+		E064DE3728C646EF00141D2E /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064DE3628C646EF00141D2E /* NetworkDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E064DE3028C63ACD00141D2E /* extension View Controller table delegate & data source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension View Controller table delegate & data source.swift"; sourceTree = "<group>"; };
 		E064DE3228C6417500141D2E /* SearchResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponce.swift; sourceTree = "<group>"; };
 		E064DE3428C644D600141D2E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E064DE3628C646EF00141D2E /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				E064DE2E28C63A5A00141D2E /* CurrencyTableViewCell.swift */,
 				E064DE3228C6417500141D2E /* SearchResponce.swift */,
 				E064DE3428C644D600141D2E /* NetworkService.swift */,
+				E064DE3628C646EF00141D2E /* NetworkDataFetcher.swift */,
 			);
 			path = "Bitcoin Price";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E064DE3728C646EF00141D2E /* NetworkDataFetcher.swift in Sources */,
 				E064DE3328C6417500141D2E /* SearchResponce.swift in Sources */,
 				E064DE2F28C63A5A00141D2E /* CurrencyTableViewCell.swift in Sources */,
 				E064DE1F28C6309200141D2E /* ViewController.swift in Sources */,
