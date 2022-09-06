@@ -7,6 +7,8 @@
 
 import UIKit
 
+// Модель кастомной ячейки
+
 class CurrencyTableViewCell: UITableViewCell {
 
     @IBOutlet var currency: UILabel!

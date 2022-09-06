@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         setupTableView()
     }
     
+    // Установка и обновление данных в таблице
+    
     private func setupTableView() {
         table.delegate = self
         table.dataSource = self
@@ -42,6 +44,8 @@ class ViewController: UIViewController {
         }
     }
     
+    // Наполнение массива валют для отображения в таблице
+    
     private func currencyesCount() {
 
         guard let usd = searchResponce?.bpi.USD else { return }
@@ -53,6 +57,8 @@ class ViewController: UIViewController {
         currencyes.append(eur)
     }
     
+    // Преобразование строки с сервера в формат Date
+    
     private func dateFromString(from stringDate: String) -> Date? {
         let localDateFormatter = ISO8601DateFormatter()
         localDateFormatter.timeZone = TimeZone.current
@@ -61,6 +67,8 @@ class ViewController: UIViewController {
         
         return localDate
     }
+    
+    // Преобразование Date в Ru формат
     
     private func localDate(from date: Date) -> String {
         let dateFormatter = DateFormatter()

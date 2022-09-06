@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Получение данных с сервера
+
 class NetworkService {
     
     func request(urlString: String, completion: @escaping (Result<Data, Error>) -> Void) {

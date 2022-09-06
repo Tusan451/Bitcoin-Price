@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Парсинг полученнных данных с сервера
+
 class NetworkDataFetcher {
     
     let networkService = NetworkService()

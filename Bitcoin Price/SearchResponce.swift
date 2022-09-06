@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Модель для получения данных с сервера
+
 struct SearchResponce: Codable {
     var time: Time
     var bpi: Currency

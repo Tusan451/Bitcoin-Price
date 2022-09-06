@@ -29,6 +29,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return 70
     }
     
+    // Редактирование отображения курса
+    
     private func setLabelForRate(for label: CurrencyData) -> String {
         
         var currencyRate = label.rate
