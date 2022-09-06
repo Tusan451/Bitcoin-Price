@@ -33,6 +33,8 @@ class ViewController: UIViewController {
             
             if let date = self.dateFromString(from: searchResponce.time.updatedISO) {
                 print(date)
+                let localDate = self.localDate(from: date)
+                print(localDate)
             } else {
                 print("Some error")
             }
@@ -62,6 +64,14 @@ class ViewController: UIViewController {
         let localDate = localDateFormatter.date(from: stringDate)
         
         return localDate
+    }
+    
+    private func localDate(from date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ru_RU")
+        dateFormatter.setLocalizedDateFormatFromTemplate("d MMMM yyyy HH:mm")
+        
+        return dateFormatter.string(from: date)
     }
 }
 
