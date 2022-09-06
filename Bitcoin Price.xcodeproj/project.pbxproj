@@ -66,20 +66,68 @@
 		E064DE1928C6309200141D2E /* Bitcoin Price */ = {
 			isa = PBXGroup;
 			children = (
-				E064DE1A28C6309200141D2E /* AppDelegate.swift */,
-				E064DE1C28C6309200141D2E /* SceneDelegate.swift */,
-				E064DE1E28C6309200141D2E /* ViewController.swift */,
-				E064DE3028C63ACD00141D2E /* extension View Controller table delegate & data source.swift */,
-				E064DE2028C6309200141D2E /* Main.storyboard */,
-				E064DE2328C6309400141D2E /* Assets.xcassets */,
-				E064DE2528C6309400141D2E /* LaunchScreen.storyboard */,
-				E064DE2828C6309400141D2E /* Info.plist */,
+				E0FAF96528C7A9CC007F23F1 /* App */,
+				E0FAF96228C7A97E007F23F1 /* View Controller */,
+				E0FAF96328C7A9A6007F23F1 /* Story Boards */,
+				E0FAF96428C7A9BE007F23F1 /* Resources */,
+				E0FAF96028C7A95C007F23F1 /* Models */,
+				E0FAF96128C7A96E007F23F1 /* Networking */,
+			);
+			path = "Bitcoin Price";
+			sourceTree = "<group>";
+		};
+		E0FAF96028C7A95C007F23F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				E064DE2E28C63A5A00141D2E /* CurrencyTableViewCell.swift */,
 				E064DE3228C6417500141D2E /* SearchResponce.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E0FAF96128C7A96E007F23F1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
 				E064DE3428C644D600141D2E /* NetworkService.swift */,
 				E064DE3628C646EF00141D2E /* NetworkDataFetcher.swift */,
 			);
-			path = "Bitcoin Price";
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E0FAF96228C7A97E007F23F1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E064DE1E28C6309200141D2E /* ViewController.swift */,
+				E064DE3028C63ACD00141D2E /* extension View Controller table delegate & data source.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		E0FAF96328C7A9A6007F23F1 /* Story Boards */ = {
+			isa = PBXGroup;
+			children = (
+				E064DE2028C6309200141D2E /* Main.storyboard */,
+				E064DE2528C6309400141D2E /* LaunchScreen.storyboard */,
+			);
+			path = "Story Boards";
+			sourceTree = "<group>";
+		};
+		E0FAF96428C7A9BE007F23F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E064DE2328C6309400141D2E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E0FAF96528C7A9CC007F23F1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E064DE1A28C6309200141D2E /* AppDelegate.swift */,
+				E064DE1C28C6309200141D2E /* SceneDelegate.swift */,
+				E064DE2828C6309400141D2E /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34J2M9FNPA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bitcoin Price/Info.plist";
+				INFOPLIST_FILE = "Bitcoin Price/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -340,7 +388,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 34J2M9FNPA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bitcoin Price/Info.plist";
+				INFOPLIST_FILE = "Bitcoin Price/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
