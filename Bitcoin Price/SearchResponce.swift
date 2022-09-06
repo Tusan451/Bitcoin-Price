@@ -26,5 +26,6 @@ struct Currency: Codable {
 
 struct CurrencyData: Codable {
     var code: String
+    var rate: String
     var rate_float: Float
 }

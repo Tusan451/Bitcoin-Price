@@ -17,14 +17,30 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CurrencyTableViewCell
         let currency = currencyes[indexPath.row]
-        let currencyRate = Int(ceil(currency.rate_float))
+        
+        let currencyRate = setLabelForRate(for: currency)
         
         cell.currency.text = currency.code
-        cell.rate.text = String(currencyRate)
+        cell.rate.text = currencyRate
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
+    }
+    
+    private func setLabelForRate(for label: CurrencyData) -> String {
+        
+        var currencyRate = label.rate
+        let subrange = ","
+        
+        if let range = currencyRate.range(of: subrange) {
+            currencyRate.replaceSubrange(range, with: ".")
+        }
+        
+        currencyRate.removeLast()
+        currencyRate.removeLast()
+        
+        return currencyRate
     }
 }

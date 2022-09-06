@@ -32,7 +32,6 @@ class ViewController: UIViewController {
             self.searchResponce = searchResponce
             
             var localDate: String = ""
-            
             guard let date = self.dateFromString(from: searchResponce.time.updatedISO) else { return }
             localDate = self.localDate(from: date)
             
