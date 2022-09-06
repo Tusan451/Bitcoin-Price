@@ -31,15 +31,12 @@ class ViewController: UIViewController {
             guard let searchResponce = searchResponce else { return }
             self.searchResponce = searchResponce
             
-            if let date = self.dateFromString(from: searchResponce.time.updatedISO) {
-                print(date)
-                let localDate = self.localDate(from: date)
-                print(localDate)
-            } else {
-                print("Some error")
-            }
+            var localDate: String = ""
             
-            self.currentDate.text = searchResponce.time.updated
+            guard let date = self.dateFromString(from: searchResponce.time.updatedISO) else { return }
+            localDate = self.localDate(from: date)
+            
+            self.currentDate.text = localDate
             self.currencyesCount()
             
             self.table.reloadData()
@@ -69,7 +66,7 @@ class ViewController: UIViewController {
     private func localDate(from date: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "ru_RU")
-        dateFormatter.setLocalizedDateFormatFromTemplate("d MMMM yyyy HH:mm")
+        dateFormatter.setLocalizedDateFormatFromTemplate("E d MMMM yyyy HH:mm")
         
         return dateFormatter.string(from: date)
     }
