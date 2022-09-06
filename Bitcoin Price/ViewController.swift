@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupTableView()
-//        currencyesCount()
     }
     
     private func setupTableView() {
@@ -32,14 +31,16 @@ class ViewController: UIViewController {
             guard let searchResponce = searchResponce else { return }
             self.searchResponce = searchResponce
             
+            if let date = self.dateFromString(from: searchResponce.time.updatedISO) {
+                print(date)
+            } else {
+                print("Some error")
+            }
+            
             self.currentDate.text = searchResponce.time.updated
             self.currencyesCount()
             
             self.table.reloadData()
-            
-            print(searchResponce.time)
-            print(searchResponce.bpi.USD!)
-            print(self.currencyes.count)
         }
     }
     
@@ -54,11 +55,11 @@ class ViewController: UIViewController {
         currencyes.append(eur)
     }
     
-    private func serverToLocalTime(date: String) -> Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        dateFormatter.timeZone = TimeZone(abbreviation: "ru_RU")
-        let localDate = dateFormatter.date(from: date)
+    private func dateFromString(from stringDate: String) -> Date? {
+        let localDateFormatter = ISO8601DateFormatter()
+        localDateFormatter.timeZone = TimeZone.current
+        
+        let localDate = localDateFormatter.date(from: stringDate)
         
         return localDate
     }
