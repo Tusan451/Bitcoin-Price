@@ -17,8 +17,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CurrencyTableViewCell
         let currency = currencyes[indexPath.row]
-        
         let currencyRate = setLabelForRate(for: currency)
+        
+        // Проверяем сохраненные значения валют и устанавливаем цвет лэйбла
+        let check = checkRates(for: currency, by: currency.code)
+        setColorForRateLabel(for: cell, check: check)
+        
+        // Сохраняем курс валют в UserDefaults
+        UserDefaults.standard.set(currency.rate_float, forKey: currency.code)
         
         cell.currency.text = currency.code
         cell.rate.text = currencyRate

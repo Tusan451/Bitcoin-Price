@@ -20,7 +20,7 @@ class NetworkDataFetcher {
                 do {
                     let currencyes = try JSONDecoder().decode(SearchResponce.self, from: data)
                     responce(currencyes)
-                } catch let jsonError{
+                } catch let jsonError {
                     print("Failed to decode json", jsonError)
                 }
             case .failure(let error):
