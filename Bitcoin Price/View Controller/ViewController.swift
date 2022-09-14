@@ -43,39 +43,5 @@ class ViewController: UIViewController {
             self.table.reloadData()
         }
     }
-    
-    // Наполнение массива валют для отображения в таблице
-    
-    private func currencyesCount() {
-
-        guard let usd = searchResponce?.bpi.USD else { return }
-        guard let gbp = searchResponce?.bpi.GBP else { return }
-        guard let eur = searchResponce?.bpi.EUR else { return }
-
-        currencyes.append(usd)
-        currencyes.append(gbp)
-        currencyes.append(eur)
-    }
-    
-    // Преобразование строки с сервера в формат Date
-    
-    private func dateFromString(from stringDate: String) -> Date? {
-        let localDateFormatter = ISO8601DateFormatter()
-        localDateFormatter.timeZone = TimeZone.current
-        
-        let localDate = localDateFormatter.date(from: stringDate)
-        
-        return localDate
-    }
-    
-    // Преобразование Date в Ru формат
-    
-    private func localDate(from date: Date) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: "ru_RU")
-        dateFormatter.setLocalizedDateFormatFromTemplate("E d MMMM yyyy HH:mm")
-        
-        return dateFormatter.string(from: date)
-    }
 }
 

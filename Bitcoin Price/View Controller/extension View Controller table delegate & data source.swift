@@ -34,21 +34,4 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
-    
-    // Редактирование отображения курса
-    
-    private func setLabelForRate(for label: CurrencyData) -> String {
-        
-        var currencyRate = label.rate
-        let subrange = ","
-        
-        if let range = currencyRate.range(of: subrange) {
-            currencyRate.replaceSubrange(range, with: ".")
-        }
-        
-        currencyRate.removeLast()
-        currencyRate.removeLast()
-        
-        return currencyRate
-    }
 }

@@ -19,6 +19,8 @@
 		E064DE3528C644D600141D2E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064DE3428C644D600141D2E /* NetworkService.swift */; };
 		E064DE3728C646EF00141D2E /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064DE3628C646EF00141D2E /* NetworkDataFetcher.swift */; };
 		E0A0589C28D2257C0068042B /* extension + UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0589B28D2257C0068042B /* extension + UserDefaults.swift */; };
+		E0A0589E28D226B70068042B /* extension + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0589D28D226B70068042B /* extension + Date.swift */; };
+		E0A058A028D2276F0068042B /* extension + information settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0589F28D2276F0068042B /* extension + information settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		E064DE3428C644D600141D2E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		E064DE3628C646EF00141D2E /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		E0A0589B28D2257C0068042B /* extension + UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + UserDefaults.swift"; sourceTree = "<group>"; };
+		E0A0589D28D226B70068042B /* extension + Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + Date.swift"; sourceTree = "<group>"; };
+		E0A0589F28D2276F0068042B /* extension + information settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + information settings.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				E064DE1E28C6309200141D2E /* ViewController.swift */,
 				E064DE3028C63ACD00141D2E /* extension View Controller table delegate & data source.swift */,
 				E0A0589B28D2257C0068042B /* extension + UserDefaults.swift */,
+				E0A0589D28D226B70068042B /* extension + Date.swift */,
+				E0A0589F28D2276F0068042B /* extension + information settings.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E064DE3728C646EF00141D2E /* NetworkDataFetcher.swift in Sources */,
+				E0A058A028D2276F0068042B /* extension + information settings.swift in Sources */,
 				E064DE3328C6417500141D2E /* SearchResponce.swift in Sources */,
 				E064DE2F28C63A5A00141D2E /* CurrencyTableViewCell.swift in Sources */,
 				E064DE1F28C6309200141D2E /* ViewController.swift in Sources */,
@@ -213,6 +220,7 @@
 				E064DE1D28C6309200141D2E /* SceneDelegate.swift in Sources */,
 				E0A0589C28D2257C0068042B /* extension + UserDefaults.swift in Sources */,
 				E064DE3528C644D600141D2E /* NetworkService.swift in Sources */,
+				E0A0589E28D226B70068042B /* extension + Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
